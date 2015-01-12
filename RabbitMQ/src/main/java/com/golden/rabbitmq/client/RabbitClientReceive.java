@@ -9,10 +9,12 @@ import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.QueueingConsumer;
 
 
-import static com.golden.rabbitmq.client.RabbitClientSend.QUEUE_NAME;
+//import static com.golden.rabbitmq.client.RabbitClientSend.QUEUE_NAME;
+// something changed on git commit xtra
 
-/* test change */
+/* test change xxx */
 public class RabbitClientReceive {
+	public final static String QUEUE_NAME = "durable_hello2";
 	private ConnectionFactory factory;
 	private Connection connection;
 	private Channel channel;
